@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C921D80D2A2B6C9D003F6FAF /* 360 Images in Resources */ = {isa = PBXBuildFile; fileRef = C921D80C2A2B6C9D003F6FAF /* 360 Images */; };
+		C921D80F2A2B6CE6003F6FAF /* 3D Models in Resources */ = {isa = PBXBuildFile; fileRef = C921D80E2A2B6CE6003F6FAF /* 3D Models */; };
+		C99BCAF12A2B3EB100122CF6 /* RBR360ImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = C99BCAF02A2B3EB100122CF6 /* RBR360ImageViewer */; };
 		C9A6AB2B2A2B3C99007B51D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */; };
 		C9A6AB2D2A2B3C99007B51D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */; };
 		C9A6AB2F2A2B3C99007B51D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AB2E2A2B3C99007B51D8 /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C921D80C2A2B6C9D003F6FAF /* 360 Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "360 Images"; sourceTree = "<group>"; };
+		C921D80E2A2B6CE6003F6FAF /* 3D Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "3D Models"; sourceTree = "<group>"; };
 		C9A6AB272A2B3C99007B51D8 /* 360ViewerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 360ViewerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99BCAF12A2B3EB100122CF6 /* RBR360ImageViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */,
 				C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */,
 				C9A6AB2E2A2B3C99007B51D8 /* ViewController.swift */,
+				C921D80E2A2B6CE6003F6FAF /* 3D Models */,
+				C921D80C2A2B6C9D003F6FAF /* 360 Images */,
 				C9A6AB302A2B3C99007B51D8 /* Main.storyboard */,
 				C9A6AB332A2B3C9A007B51D8 /* Assets.xcassets */,
 				C9A6AB352A2B3C9A007B51D8 /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = 360ViewerExample;
+			packageProductDependencies = (
+				C99BCAF02A2B3EB100122CF6 /* RBR360ImageViewer */,
+			);
 			productName = 360ViewerExample;
 			productReference = C9A6AB272A2B3C99007B51D8 /* 360ViewerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = C9A6AB1E2A2B3C99007B51D8;
+			packageReferences = (
+				C99BCAEF2A2B3EB100122CF6 /* XCRemoteSwiftPackageReference "RBR360-Image-Viewer" */,
+			);
 			productRefGroup = C9A6AB282A2B3C99007B51D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A6AB372A2B3C9A007B51D8 /* LaunchScreen.storyboard in Resources */,
+				C921D80F2A2B6CE6003F6FAF /* 3D Models in Resources */,
+				C921D80D2A2B6C9D003F6FAF /* 360 Images in Resources */,
 				C9A6AB342A2B3C9A007B51D8 /* Assets.xcassets in Resources */,
 				C9A6AB322A2B3C99007B51D8 /* Main.storyboard in Resources */,
 			);
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C99BCAEF2A2B3EB100122CF6 /* XCRemoteSwiftPackageReference "RBR360-Image-Viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rohanbimalraj/RBR360-Image-Viewer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C99BCAF02A2B3EB100122CF6 /* RBR360ImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C99BCAEF2A2B3EB100122CF6 /* XCRemoteSwiftPackageReference "RBR360-Image-Viewer" */;
+			productName = RBR360ImageViewer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9A6AB1F2A2B3C99007B51D8 /* Project object */;
 }

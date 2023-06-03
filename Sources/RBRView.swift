@@ -10,7 +10,7 @@ import SceneKit
 import SceneKit.ModelIO
 import CoreMotion
 
-class RBRView: UIView {
+open class RBRView: UIView {
 
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var scnView: SCNView!
@@ -35,7 +35,7 @@ class RBRView: UIView {
         super.init(frame: frame)
         initSubViews()
     }
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         initSubViews()
     }
@@ -412,7 +412,7 @@ class RBRView: UIView {
 }
 
 extension RBRView: SCNSceneRendererDelegate {
-    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+    public func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         if shouldRotateUp {
             print("LEFT Button Pressed")
             self.cameraNode.eulerAngles.x += 0.01
