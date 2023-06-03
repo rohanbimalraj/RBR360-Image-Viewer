@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C921D80D2A2B6C9D003F6FAF /* 360 Images in Resources */ = {isa = PBXBuildFile; fileRef = C921D80C2A2B6C9D003F6FAF /* 360 Images */; };
-		C921D80F2A2B6CE6003F6FAF /* 3D Models in Resources */ = {isa = PBXBuildFile; fileRef = C921D80E2A2B6CE6003F6FAF /* 3D Models */; };
+		C921D8182A2B7114003F6FAF /* galaxy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8102A2B7112003F6FAF /* galaxy.jpeg */; };
+		C921D8192A2B7114003F6FAF /* galaxyTwo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8112A2B7112003F6FAF /* galaxyTwo.jpeg */; };
+		C921D81A2A2B7114003F6FAF /* galaxyOne.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8122A2B7112003F6FAF /* galaxyOne.jpeg */; };
+		C921D81B2A2B7114003F6FAF /* Stonewall_Ref.hdr in Resources */ = {isa = PBXBuildFile; fileRef = C921D8132A2B7113003F6FAF /* Stonewall_Ref.hdr */; };
+		C921D81C2A2B7114003F6FAF /* hotel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8142A2B7113003F6FAF /* hotel.jpeg */; };
+		C921D81D2A2B7114003F6FAF /* landscape.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8152A2B7113003F6FAF /* landscape.jpeg */; };
+		C921D81E2A2B7114003F6FAF /* classRoom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8162A2B7113003F6FAF /* classRoom.jpeg */; };
+		C921D81F2A2B7114003F6FAF /* telescope360.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C921D8172A2B7114003F6FAF /* telescope360.jpeg */; };
+		C921D8242A2B719A003F6FAF /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C921D8212A2B7199003F6FAF /* toy_biplane.usdz */; };
+		C921D8252A2B719A003F6FAF /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C921D8222A2B7199003F6FAF /* AirForce.usdz */; };
+		C921D8262A2B719A003F6FAF /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C921D8232A2B719A003F6FAF /* toy_drummer.usdz */; };
 		C99BCAF12A2B3EB100122CF6 /* RBR360ImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = C99BCAF02A2B3EB100122CF6 /* RBR360ImageViewer */; };
 		C9A6AB2B2A2B3C99007B51D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */; };
 		C9A6AB2D2A2B3C99007B51D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */; };
@@ -19,8 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C921D80C2A2B6C9D003F6FAF /* 360 Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "360 Images"; sourceTree = "<group>"; };
-		C921D80E2A2B6CE6003F6FAF /* 3D Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "3D Models"; sourceTree = "<group>"; };
+		C921D8102A2B7112003F6FAF /* galaxy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = galaxy.jpeg; sourceTree = "<group>"; };
+		C921D8112A2B7112003F6FAF /* galaxyTwo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = galaxyTwo.jpeg; sourceTree = "<group>"; };
+		C921D8122A2B7112003F6FAF /* galaxyOne.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = galaxyOne.jpeg; sourceTree = "<group>"; };
+		C921D8132A2B7113003F6FAF /* Stonewall_Ref.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stonewall_Ref.hdr; sourceTree = "<group>"; };
+		C921D8142A2B7113003F6FAF /* hotel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotel.jpeg; sourceTree = "<group>"; };
+		C921D8152A2B7113003F6FAF /* landscape.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpeg; sourceTree = "<group>"; };
+		C921D8162A2B7113003F6FAF /* classRoom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = classRoom.jpeg; sourceTree = "<group>"; };
+		C921D8172A2B7114003F6FAF /* telescope360.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = telescope360.jpeg; sourceTree = "<group>"; };
+		C921D8212A2B7199003F6FAF /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		C921D8222A2B7199003F6FAF /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
+		C921D8232A2B719A003F6FAF /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		C9A6AB272A2B3C99007B51D8 /* 360ViewerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 360ViewerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C921D8202A2B7151003F6FAF /* 360 Images */ = {
+			isa = PBXGroup;
+			children = (
+				C921D8162A2B7113003F6FAF /* classRoom.jpeg */,
+				C921D8102A2B7112003F6FAF /* galaxy.jpeg */,
+				C921D8122A2B7112003F6FAF /* galaxyOne.jpeg */,
+				C921D8112A2B7112003F6FAF /* galaxyTwo.jpeg */,
+				C921D8142A2B7113003F6FAF /* hotel.jpeg */,
+				C921D8152A2B7113003F6FAF /* landscape.jpeg */,
+				C921D8132A2B7113003F6FAF /* Stonewall_Ref.hdr */,
+				C921D8172A2B7114003F6FAF /* telescope360.jpeg */,
+			);
+			path = "360 Images";
+			sourceTree = "<group>";
+		};
+		C921D8272A2B71A2003F6FAF /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				C921D8222A2B7199003F6FAF /* AirForce.usdz */,
+				C921D8212A2B7199003F6FAF /* toy_biplane.usdz */,
+				C921D8232A2B719A003F6FAF /* toy_drummer.usdz */,
+			);
+			path = "3D Models";
+			sourceTree = "<group>";
+		};
 		C9A6AB1E2A2B3C99007B51D8 = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +108,8 @@
 				C9A6AB2A2A2B3C99007B51D8 /* AppDelegate.swift */,
 				C9A6AB2C2A2B3C99007B51D8 /* SceneDelegate.swift */,
 				C9A6AB2E2A2B3C99007B51D8 /* ViewController.swift */,
-				C921D80E2A2B6CE6003F6FAF /* 3D Models */,
-				C921D80C2A2B6C9D003F6FAF /* 360 Images */,
+				C921D8272A2B71A2003F6FAF /* 3D Models */,
+				C921D8202A2B7151003F6FAF /* 360 Images */,
 				C9A6AB302A2B3C99007B51D8 /* Main.storyboard */,
 				C9A6AB332A2B3C9A007B51D8 /* Assets.xcassets */,
 				C9A6AB352A2B3C9A007B51D8 /* LaunchScreen.storyboard */,
@@ -139,11 +182,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C921D8192A2B7114003F6FAF /* galaxyTwo.jpeg in Resources */,
+				C921D81D2A2B7114003F6FAF /* landscape.jpeg in Resources */,
+				C921D81F2A2B7114003F6FAF /* telescope360.jpeg in Resources */,
+				C921D8182A2B7114003F6FAF /* galaxy.jpeg in Resources */,
+				C921D81B2A2B7114003F6FAF /* Stonewall_Ref.hdr in Resources */,
 				C9A6AB372A2B3C9A007B51D8 /* LaunchScreen.storyboard in Resources */,
-				C921D80F2A2B6CE6003F6FAF /* 3D Models in Resources */,
-				C921D80D2A2B6C9D003F6FAF /* 360 Images in Resources */,
+				C921D8242A2B719A003F6FAF /* toy_biplane.usdz in Resources */,
 				C9A6AB342A2B3C9A007B51D8 /* Assets.xcassets in Resources */,
+				C921D81C2A2B7114003F6FAF /* hotel.jpeg in Resources */,
+				C921D8262A2B719A003F6FAF /* toy_drummer.usdz in Resources */,
+				C921D81A2A2B7114003F6FAF /* galaxyOne.jpeg in Resources */,
+				C921D81E2A2B7114003F6FAF /* classRoom.jpeg in Resources */,
 				C9A6AB322A2B3C99007B51D8 /* Main.storyboard in Resources */,
+				C921D8252A2B719A003F6FAF /* AirForce.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,8 +25,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Vyq-Bh-g6u" secondAttribute="bottom" id="0IT-1S-VPS"/>
-                            <constraint firstItem="Vyq-Bh-g6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2x0-FR-Nvd"/>
-                            <constraint firstItem="Vyq-Bh-g6u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bku-hr-fUn"/>
+                            <constraint firstItem="Vyq-Bh-g6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2x0-FR-Nvd"/>
+                            <constraint firstItem="Vyq-Bh-g6u" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="bku-hr-fUn"/>
                             <constraint firstItem="Vyq-Bh-g6u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nwx-YR-WJI"/>
                         </constraints>
                     </view>
