@@ -41,7 +41,7 @@ open class RBRView: UIView {
     }
     
     @available(iOS 13.0, *)
-    func loadImage(with url: URL, camera control: cameraControl) {
+    public func loadImage(with url: URL, camera control: cameraControl) {
         controlPanelView.isHidden = true
         dPadView.isHidden = true
         let scene = SCNScene()

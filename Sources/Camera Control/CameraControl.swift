@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum cameraControl {
+public enum cameraControl {
     case dPad
     case gesture
     case gyro
