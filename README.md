@@ -20,8 +20,9 @@ A swift package for viewing spherical panoramas(2:1 aspect ratio) and additional
 
 
 ## Demo
+![rbr360ImageViewerOne](https://github.com/rohanbimalraj/RBR360-Image-Viewer/assets/81905077/3548913c-6962-4734-9c1b-b9cff473fd04)
 
-![rbr360ImageViewer](https://github.com/rohanbimalraj/RBR360-Image-Viewer/assets/81905077/82bfaa76-29f9-4d99-b46d-7d92d2fd0271)
+
 
 
 
