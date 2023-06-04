@@ -1,6 +1,6 @@
 # RBR360-Image-Viewer
 
-A swift package for viewing spherical panoramas(2:1 aspect ratio) and additionally for viewing 3d models(.udsz files) with the said panorama as the background environment.
+A swift package for viewing spherical panoramas(2:1 aspect ratio) and additionally for viewing 3d models with the said panorama as the background environment.
 
 
 
