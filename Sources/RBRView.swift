@@ -315,7 +315,7 @@ open class RBRView: UIView {
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.simdPosition += actualModel.simdWorldFront
+        selectedNode?.simdPosition -= actualModel.simdWorldFront
         SCNTransaction.commit()
     }
     
@@ -327,7 +327,7 @@ open class RBRView: UIView {
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.simdPosition -= actualModel.simdWorldFront
+        selectedNode?.simdPosition += actualModel.simdWorldFront
         SCNTransaction.commit()
 
     }
