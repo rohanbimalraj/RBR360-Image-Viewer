@@ -316,6 +316,7 @@ open class RBRView: UIView {
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
         selectedNode?.simdPosition += actualModel.simdWorldFront
+        SCNTransaction.commit()
     }
     
     
