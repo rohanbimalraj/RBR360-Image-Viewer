@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let url = Bundle.main.url(forResource: "landscape", withExtension: "jpeg")
-        rbrView.loadImage(with: url!, camera: .dPad)
+        rbrView.loadImage(with: url!, camera: .gesture)
         
         NotificationCenter.default.addObserver(self, selector: #selector(itemRemoved), name: .deletedModelName, object: nil)
     }

@@ -310,27 +310,27 @@ open class RBRView: UIView {
     
     @IBAction func decreaseDistanceButtonAction(_ sender: Any) {
         
+        guard let actualModel = selectedNode?.childNode(withName: "model", recursively: true) else {return}
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.position.z += 0.5
-        SCNTransaction.commit()
+        selectedNode?.simdPosition += actualModel.simdWorldFront
     }
     
     
     @IBAction func increaseDistanceButtonAction(_ sender: Any) {
         
+        guard let actualModel = selectedNode?.childNode(withName: "model", recursively: true) else {return}
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.position.z -= 0.5
+        selectedNode?.simdPosition -= actualModel.simdWorldFront
         SCNTransaction.commit()
 
     }
     @IBAction func upButtonAction(_ sender: UIButton) {
-        print("UP Button Pressed")
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
@@ -340,7 +340,6 @@ open class RBRView: UIView {
     }
     
     @IBAction func rightButtonAction(_ sender: UIButton) {
-        print("RIGHT Button Pressed")
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
@@ -351,7 +350,6 @@ open class RBRView: UIView {
     }
     
     @IBAction func downButtonAction(_ sender: UIButton) {
-        print("DOWN Button Pressed")
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
@@ -362,7 +360,6 @@ open class RBRView: UIView {
     }
     
     @IBAction func leftButttonAction(_ sender: Any) {
-        print("LEFT Button Pressed")
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
@@ -414,19 +411,15 @@ open class RBRView: UIView {
 extension RBRView: SCNSceneRendererDelegate {
     public func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         if shouldRotateUp {
-            print("LEFT Button Pressed")
             self.cameraNode.eulerAngles.x += 0.01
         }
         if shouldRotateDown {
-            print("LEFT Button Pressed")
             self.cameraNode.eulerAngles.x -= 0.01
         }
         if shouldRotateRight {
-            print("LEFT Button Pressed")
             self.cameraNode.eulerAngles.y -= 0.01
         }
         if shouldRotateLeft {
-            print("LEFT Button Pressed")
             self.cameraNode.eulerAngles.y += 0.01
         }
     }
