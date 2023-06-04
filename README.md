@@ -21,7 +21,7 @@ A swift package for viewing spherical panoramas(2:1 aspect ratio) and additional
 
 ## Demo
 
-![Demo](file:///Users/rohanbimalraj/Downloads/ezgif.com-video-to-gif%20(3).gif)
+![](file:///Users/rohanbimalraj/Downloads/rbr360ImageViewer.gif)
 
 
 ## Installation
