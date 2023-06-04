@@ -138,6 +138,20 @@ open class RBRView: UIView {
         guard let control = control, control == .gyro else {return}
         motionManager.stopDeviceMotionUpdates()
     }
+    
+    public func captureScreen() {
+        let image = scnView.snapshot()
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
+    }
+    
+    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            print("error: \(error.localizedDescription)")
+            NotificationCenter.default.post(name: .imageSaveFailure, object: nil)
+        } else {
+            NotificationCenter.default.post(name: .imageSaveSuccess, object: nil)
+        }
+    }
         
     private func nodeMethod(at position: CGPoint) -> SCNNode? {
         let n = self.scnView.hitTest(position, options: nil).first(where: {
@@ -426,4 +440,6 @@ extension RBRView: SCNSceneRendererDelegate {
 
 public extension Notification.Name {
     static let deletedModelName = Notification.Name("deletedModelName")
+    static let imageSaveSuccess = Notification.Name("imageSaveSuccess")
+    static let imageSaveFailure = Notification.Name("imageSaveFailure")
 }
