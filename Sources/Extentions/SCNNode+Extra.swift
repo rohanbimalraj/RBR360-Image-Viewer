@@ -62,4 +62,15 @@ extension SCNNode {
             node.stopAnimation()
         }
     }
+    
+    func startAnimation() {
+        self.animationKeys.forEach { key in
+            guard self.animationPlayer(forKey: key) != nil else {return}
+            let player = self.animationPlayer(forKey: key)
+            player?.speed = 1
+        }
+        self.childNodes.forEach { node in
+            node.startAnimation()
+        }
+    }
 }

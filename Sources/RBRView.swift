@@ -139,6 +139,14 @@ open class RBRView: UIView {
         motionManager.stopDeviceMotionUpdates()
     }
     
+    public func playSelectedNodeAnimation() {
+        selectedNode?.startAnimation()
+    }
+    
+    public func stopSelectedNodeAnimation() {
+        selectedNode?.stopAnimation()
+    }
+    
     public func captureScreen() {
         let image = scnView.snapshot()
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
