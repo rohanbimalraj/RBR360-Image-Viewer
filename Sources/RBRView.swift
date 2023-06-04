@@ -1,10 +1,10 @@
 //
 //  RBRView.swift
-//  VRTest3
+//  RBR360ImageViewer
 //
-//  Created by Rohan Bimal Raj on 30/04/23.
+//  Created by Rohan Bimal Raj on 04/05/2023.
+//  Copyright © 2023 Rohan Bimal Raj. All rights reserved.
 //
-
 import UIKit
 import SceneKit
 import SceneKit.ModelIO

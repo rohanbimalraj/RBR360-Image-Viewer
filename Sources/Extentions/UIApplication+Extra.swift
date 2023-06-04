@@ -1,8 +1,9 @@
 //
 //  UIApplication+Extra.swift
-//  VRTest3
+//  RBR360ImageViewer
 //
-//  Created by Rohan Bimal Raj on 13/05/23.
+//  Created by Rohan Bimal Raj on 04/05/2023.
+//  Copyright © 2023 Rohan Bimal Raj. All rights reserved.
 //
 
 import Foundation
