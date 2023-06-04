@@ -87,6 +87,7 @@ class ViewController: UIViewController {
     }
 }
 ```
+- Double tap the 3D model to select it and sigle tap it to remove selection.
 - Add photo library usage description in info pList to use image capture fuctionality.
 - To play and stop selected model animation call playSelectedNodeAnimation and stopSelectedNodeAnimation.
 
