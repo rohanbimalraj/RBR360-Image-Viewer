@@ -41,7 +41,7 @@ import RBR360ImageViewer
 class ViewController: UIViewController {
 
     /*
-     1.Add a view to your storyboard.
+     1.Add a view to your viewcontroller in storyboard.
      2.Change class from UIView to RBRView in the storyboard inspector.
      3.Create Outlet of the new view.
      */
