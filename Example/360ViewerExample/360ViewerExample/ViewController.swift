@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = Bundle.main.url(forResource: "landscape", withExtension: "jpeg")
+        let url = Bundle.main.url(forResource: "classRoom", withExtension: "jpeg")
         rbrView.loadImage(with: url!, camera: .gesture)
         
         NotificationCenter.default.addObserver(self, selector: #selector(itemRemoved), name: .deletedModelName, object: nil)
