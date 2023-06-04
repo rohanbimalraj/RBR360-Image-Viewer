@@ -310,24 +310,22 @@ open class RBRView: UIView {
     
     @IBAction func decreaseDistanceButtonAction(_ sender: Any) {
         
-        guard let actualModel = selectedNode?.childNode(withName: "model", recursively: true) else {return}
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.simdPosition -= actualModel.simdWorldFront
+        selectedNode?.simdPosition -= cameraNode.simdWorldFront
         SCNTransaction.commit()
     }
     
     
     @IBAction func increaseDistanceButtonAction(_ sender: Any) {
         
-        guard let actualModel = selectedNode?.childNode(withName: "model", recursively: true) else {return}
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
         SCNTransaction.begin()
         SCNTransaction.animationDuration = 0.5
-        selectedNode?.simdPosition += actualModel.simdWorldFront
+        selectedNode?.simdPosition += cameraNode.simdWorldFront
         SCNTransaction.commit()
 
     }
