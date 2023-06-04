@@ -358,6 +358,7 @@
 				DEVELOPMENT_TEAM = 53C3L492D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 360ViewerExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Required for saving screen shots";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -386,6 +387,7 @@
 				DEVELOPMENT_TEAM = 53C3L492D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 360ViewerExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Required for saving screen shots";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

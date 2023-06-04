@@ -38,12 +38,33 @@
                                             <action selector="addButtonACtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrR-9b-8Em"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br9-S6-Aui">
+                                        <rect key="frame" x="10" y="79" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.33000000000000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="G3G-st-w7E"/>
+                                            <constraint firstAttribute="height" constant="60" id="fD6-ee-W4q"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="camera.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="captureButtonActiob:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pY-08-hlo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="RGq-hH-xMH"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="RGq-hH-xMH" firstAttribute="trailing" secondItem="zUj-2c-QSi" secondAttribute="trailing" constant="10" id="76v-l3-fcg"/>
                                     <constraint firstItem="zUj-2c-QSi" firstAttribute="top" secondItem="RGq-hH-xMH" secondAttribute="top" constant="20" id="HuI-Wh-YPS"/>
+                                    <constraint firstItem="br9-S6-Aui" firstAttribute="leading" secondItem="RGq-hH-xMH" secondAttribute="leading" constant="10" id="sQn-Wo-1KT"/>
+                                    <constraint firstItem="br9-S6-Aui" firstAttribute="top" secondItem="RGq-hH-xMH" secondAttribute="top" constant="20" id="tze-s7-XfL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -66,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
