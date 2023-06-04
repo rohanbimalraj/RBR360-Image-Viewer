@@ -86,7 +86,8 @@ class ViewController: UIViewController {
     }
 }
 ```
-Add photo library usage description in info pList to use image capture fuctionality.
+- Add photo library usage description in info pList to use image capture fuctionality.
+- To play and stop selected model animation call playSelectedNodeAnimation and stopSelectedNodeAnimation.
 
 ## Support
 
