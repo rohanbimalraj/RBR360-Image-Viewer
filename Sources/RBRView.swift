@@ -74,7 +74,7 @@ open class RBRView: UIView {
     
     private func initSubViews() {
         guard let view = Bundle.module.loadNibNamed("RBRView", owner: self)?.first as? UIView else {
-            print("ERROR:", "FAILED TO LOAD Xib")
+            print("ERROR: ", "FAILED TO LOAD Xib")
             return
         }
         view.frame = self.bounds
@@ -88,7 +88,10 @@ open class RBRView: UIView {
     }
     
     public func addModelToScene(with url: URL, scale: Float = 0.1) {
-        let modelScene = try! SCNScene(url: url)
+        guard let modelScene = try? SCNScene(url: url) else {
+            print("ERROR: ", "FAILED TO CREATE SCENE FROM \(url)")
+            return
+        }
         let modelNode = SCNNode()
         modelScene.rootNode.childNodes.forEach { node in
             modelNode.addChildNode(node)
