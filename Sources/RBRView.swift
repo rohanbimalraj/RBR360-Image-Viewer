@@ -201,12 +201,12 @@ open class RBRView: UIView {
         
         let location = gesture.location(in: self.scnView)
         
-        guard let node = nodeMethod(at: location) else { return }
+        guard let node = nodeMethod(at: location), node !== selectedNode, let requiredNode =  node.childNodes.first else { return }
         selectedNode = node
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
         positionIndicatorNode?.removeIndicator()
-        positionIndicatorNode?.addIndicator(to: node.childNodes.first!)
+        positionIndicatorNode?.addIndicator(to: requiredNode)
         
         UIView.transition(with: self, duration: 0.5,
                           options: .transitionCrossDissolve,
