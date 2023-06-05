@@ -145,11 +145,11 @@ open class RBRView: UIView {
         motionManager.stopDeviceMotionUpdates()
     }
     
-    public func playSelectedNodeAnimation() {
+    public func playAnimation() {
         selectedNode?.startAnimation()
     }
     
-    public func stopSelectedNodeAnimation() {
+    public func stopAnimation() {
         selectedNode?.stopAnimation()
     }
     
