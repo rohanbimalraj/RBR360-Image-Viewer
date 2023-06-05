@@ -73,7 +73,10 @@ open class RBRView: UIView {
     }
     
     private func initSubViews() {
-        let view = Bundle.module.loadNibNamed("RBRView", owner: self)!.first as! UIView
+        guard let view = Bundle.module.loadNibNamed("RBRView", owner: self)?.first as? UIView else {
+            print("ERROR:", "FAILED TO LOAD Xib")
+            return
+        }
         view.frame = self.bounds
         self.insertSubview(view, at: 0)
         NSLayoutConstraint.activate([
