@@ -34,6 +34,10 @@ If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package D
     
 ## Usage/Examples
 
+- Double tap the 3D model to select it and sigle tap it to remove selection.
+- Add photo library usage description in info pList to use image capture fuctionality.
+- To play and stop selected model animation call playAnimation and stopAnimation.
+
 ```swift
 import UIKit
 import RBR360ImageViewer
@@ -87,9 +91,6 @@ class ViewController: UIViewController {
     }
 }
 ```
-- Double tap the 3D model to select it and sigle tap it to remove selection.
-- Add photo library usage description in info pList to use image capture fuctionality.
-- To play and stop selected model animation call playSelectedNodeAnimation and stopSelectedNodeAnimation.
 
 ## Support
 
