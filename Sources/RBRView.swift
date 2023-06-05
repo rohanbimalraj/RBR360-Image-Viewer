@@ -290,9 +290,9 @@ open class RBRView: UIView {
         case .began:
             guard let hitNodeResult = scnView.hitTest(location).first else {return}
             lastPanLocation = hitNodeResult.worldCoordinates
-            let node = nodeMethod(at: location)
-            geometryNode = node
-            panStartZ = CGFloat(scnView.projectPoint(geometryNode!.position).z)
+            geometryNode = nodeMethod(at: location)
+            guard let node = geometryNode else {return}
+            panStartZ = CGFloat(scnView.projectPoint(node.position).z)
         case .changed:
             guard let geometryNode = geometryNode, geometryNode.isSelected else {
                 guard control == .gesture else {return}
